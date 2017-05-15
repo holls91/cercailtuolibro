@@ -1,0 +1,21 @@
+localhost:8080/cercailtuolibro
+	/author
+		/create: aggiunge l'autore passato in json al DB
+		/id/{id}: restituisce l'autore con l'id passato
+		/update: aggiorna l'autore passato in json nel DB
+		/delete: elimina l'autore passato in json dal DB
+		/list: restituisce la lista di tutti gli autori (query: autore.selectAll)
+		/name/{name}: restituisce l'autore con il nome passato (query: autore.byName)
+		/find/{name}: restituisce la lista degli autori il cui nome contiene il valore passato (query: autore.nameLike)
+	
+	/book
+		/create: aggiunge il libro passato in json al DB
+		/id/{id}: restituisce il libro con l'id passato
+		/update: aggiorna il libro passato in json nel DB
+		/delete: elimina il libro passato in json dal DB
+		/find/{title}: restituisce la lista dei libri il cui titolo contiene il valore passato (query: libro.titleLike)
+		/author/id/{id}: restituisce i libri dell'autore con l'id passato
+		/approve/{id}: approva il libro con l'id passato (attualemnte disabilitato)
+		
+/test/ciao
+/test/ciao/{nome}
