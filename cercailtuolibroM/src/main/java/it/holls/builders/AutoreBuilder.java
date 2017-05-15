@@ -28,8 +28,8 @@ public class AutoreBuilder {
 		return this;
 	}
 	public AutoreBuilder withLibri(Set<Libro> libri){
-		if(libri==null) {
-			libri = new HashSet<Libro>();
+		if(this.libri==null) {
+			this.libri = new HashSet<Libro>();
 		}
 		this.libri.addAll(libri);
 		return this;

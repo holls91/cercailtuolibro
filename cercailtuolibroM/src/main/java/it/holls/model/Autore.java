@@ -46,4 +46,12 @@ public class Autore {
 	public String getNome() {
 		return nome;
 	}
+
+	public Set<Libro> getLibri() {
+		return libri;
+	}
+
+	public Set<Utente> getUtentiPref() {
+		return utentiPref;
+	}
 }
